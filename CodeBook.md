@@ -1,4 +1,4 @@
-## Code Book
+## Code Book for run_analysis.R script
 The run_analysis.R script action the data preparation followed by the 5 steps required as described in the Coursera Getting and Cleaning Data Course Project definition.
 
 
