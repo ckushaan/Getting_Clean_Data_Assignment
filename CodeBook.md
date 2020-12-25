@@ -22,16 +22,7 @@ Here I have used the rbind() function to combine temp x_train, x_test, y_train, 
 Followed by cbind() function to combine columns of the x, y, s and name the variables called Merged_Data
 
 
-```{r cars}
-summary(cars)
-```
+## 2. Extracts only the measurements on the mean and standard deviation for each measurement
+Following chaining operations is used to subset the above Merged_Data by selecting only the columns:subject, code and the measurements on the mean and standard deviation (std) for each measurement
+```TidyData <- Merged_Data %>% select(subject, code, contains("mean"), contains("std"))```
 
-## Including Plots
-
-You can also embed plots, for exampl asdas de:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
