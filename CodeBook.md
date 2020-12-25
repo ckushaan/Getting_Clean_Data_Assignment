@@ -26,3 +26,18 @@ Followed by cbind() function to combine columns of the x, y, s and name the vari
 Following chaining operations is used to subset the above Merged_Data by selecting only the columns:subject, code and the measurements on the mean and standard deviation (std) for each measurement
 ```TidyData <- Merged_Data %>% select(subject, code, contains("mean"), contains("std"))```
 
+## 3. Uses descriptive activity names to name the activities in the data set
+Here we have used the entire numbers in code column of the TidyData variable and replaced with corresponding activity taken from second column of the activities variable.
+
+## 4. Appropriately labels the data set with descriptive variable names. 
+Renamed TidyData 'code' column into 'activities'
+Renamed 'Acc' in column’s names to 'Accelerometer'
+Renamed 'Gyro' in column’s names to 'Gyroscope'
+Renamed 'BodyBody' in column’s names to 'Body'
+Renamed 'Mag' in column’s names to 'Magnitude'
+Renamed any column that start with a character f to 'Frequency'
+Renamed any column that start with character t 'in column’s name replaced by 'Time'
+
+## 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+Final step is where I have summarise the TidyData by taking means of each variable for each activity and each subject by grouping them by subject and activity. Once that is completed, it will write the FinalData.txt file to working folder. 
+
