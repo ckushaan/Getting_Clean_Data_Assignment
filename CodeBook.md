@@ -17,7 +17,7 @@ x_train variable is the data which comes from X_train.txt file
 y_train variable is the data which comes from y_train.txt file
 
 
-## 1.Merges the training and the test sets to create one data set
+## 1. Merges the training and the test sets to create one data set
 Here I have used the rbind() function to combine temp x_train, x_test, y_train, y_test, sub_train, sub_test variables,
 Followed by cbind() function to combine columns of the x, y, s and name the variables called Merged_Data
 
